@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up form</title>
+</head>
+
+<body>
+<form action="/submit" method="post">
+        <h2>Sign Up to Our Service</h2>
+        <br>
+        <h3>Personal Information</h3>
+        <h4>Name</h4>
+        <input type="text" placeholder="First Name" name="firstname">
+        <input type="text" placeholder="Last Name" name="lastname">
+        <h4>Email</h4>
+        <input type="email" placeholder="xxxx.gmail.com" name
+        ="email">
+        <h4>Username</h4>
+        <input type="text" placeholder="Username" name="username">
+        <h4>Password</h4>
+        <input type="password" placeholder="Password" name="password">
+        <h4>Confirm Password</h4>
+        <input type="password" placeholder="Confirm Password" name="confirm_password">
+        <h4>Profile Picture</h4>
+        <input type="file" accept="image/*">
+        <br>
+        <b>Age</b>
+        <input type="number" placeholder="Age" name="age">
+        <label>
+            <b>Date of Birth</b>
+            <input type="date" name="dob">
+        </label>
+        <br>
+        <br>
+        <input type="checkbox" id="terms">
+        <label for="terms"> I agree to the terms and conditions</label>
+        <br>
+        <button>Sign Up</button>
+    </form>
+</body>
+
+</html>
