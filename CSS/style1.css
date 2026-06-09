@@ -40,3 +40,24 @@ input[type="text"]{
 input[type="password"]{
     color: black;
 }
+#myid p {
+    color: #b92b27;
+}
+input:hover{
+    background-color: black;
+    color: white;
+}
+button:active{
+    color: #b92b27;
+}
+p:active{
+    font-weight: bold;
+}
+input[type="radio"]:checked + label{
+    color:Red;
+    font-weight: bold;
+}
+
+p::selection{
+    background-color: chartreuse;
+}
