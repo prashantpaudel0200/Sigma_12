@@ -15,7 +15,8 @@
         </h1>
         <div>
             <input type="text" placeholder="username">
-            <input type="password" placeholder="password">
+            <input type="password" id="password" placeholder="password">
+            <button onclick="showPassword()">👁️‍🗨️</button>
         </div>
         <nav>
             <ul>
@@ -28,10 +29,10 @@
         <hr>
     </header>
     <main>
-        <p>
+        <p class="post">
         Adam &nbsp;&nbsp;
         <a class="follow" href="/adam">Follow /abc</a></span>
-        </p>
+        </p class="post">
         <h3>What is the highest salary for a spacex engineer?</h3>
         <span>
             <button class="upvote">+upvote</button>
@@ -39,7 +40,7 @@
         </span>
         <hr />
 
-        <p>
+        <p class="post">
         Bob &nbsp;&nbsp;
         <a class="follow" href="/bob">Follow xyz</a>
         </p>
@@ -50,7 +51,7 @@
         </span>
         <hr />
 
-        <p>
+        <p class="post">
         Catlyn &nbsp;&nbsp;&nbsp;&nbsp;
         <a class="follow" href="/catlyn">Follow pqr</a>
         </p>
@@ -61,7 +62,7 @@
         </span>
         <hr />
 
-        <p>
+        <p class="post">
             Dan &nbsp;&nbsp;&nbsp;&nbsp;
             <a class="follow" href="/dan">Follow pqr</a>
             </p>
@@ -73,4 +74,12 @@
             <hr />
     </main>
   </body>
+  <script>
+function showPassword() {
+    const password = document.getElementById("password");
+
+    password.type =
+        password.type === "password" ? "text" : "password";
+}
+</script>
 </html>

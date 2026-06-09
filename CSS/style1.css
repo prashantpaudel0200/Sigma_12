@@ -15,3 +15,28 @@ h1 {
     background-color: green;
     color: aliceblue;
 }
+/* Desendent Selector */
+.post a {
+    color: rgb(64, 70, 185);
+    background-color: rgb(235, 237, 235);
+}
+nav ul li a{
+    color: #b92b27;
+}
+p + h3{
+    text-decoration: underline;
+}
+.upvote + button{
+    background-color: skyblue;
+    color: black;
+}
+div > input {
+    background-color: ghostwhite;
+    
+}
+input[type="text"]{
+    color: rgb(99, 97, 97);
+}
+input[type="password"]{
+    color: black;
+}
