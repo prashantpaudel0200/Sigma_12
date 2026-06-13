@@ -1,0 +1,8 @@
+div{
+    height: 100px;
+    width: 1000px;
+    padding:20px;
+    background-color:pink;
+    border-bottom: dotted;
+    margin: 50px auto;
+}
