@@ -1,0 +1,21 @@
+#one {
+    background-color: aquamarine;
+    color: brown;
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    transition: border-radius 2s ease-in 1ms, transform 2s ease-in 2ms;
+}
+#two {
+    background-color: rgb(246, 0, 0);
+    color: rgb(70, 225, 23);
+    height: 200px;
+    width: 100px;
+}
+#one:hover{
+    background-color: blue;
+    transform: scale(0.5) translate(-100%, -100%);
+    transition-delay: 2s;
+    transition-duration: 3s;
+    transition-duration: background-color: 2s;
+}
