@@ -4,5 +4,11 @@ div{
     padding:20px;
     background-color:pink;
     border-bottom: dotted;
-    margin: 50px auto;
+    margin: 100px auto;
+    transition: border-radius 2s ease-in 1ms, transform 2s ease-in 2ms;
+  
+}
+div:hover{
+    transform: rotate(45deg);
+    border-radius: 50%;
 }
