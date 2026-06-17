@@ -5,6 +5,8 @@
     margin: 10px auto;
     border: 2px solid black;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 h1{
     text-align: center;
@@ -12,7 +14,7 @@ h1{
 
 #container div{
     height: 100px;
-    width: 80%;
+    width: 10%;
     text-align: center;
     color: white;
     font: 1.5em sans-serif;
