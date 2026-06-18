@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-end
 }
 h1{
     text-align: center;
@@ -14,7 +16,7 @@ h1{
 
 #container div{
     height: 100px;
-    width: 10%;
+    width: 250px;
     text-align: center;
     color: white;
     font: 1.5em sans-serif;
