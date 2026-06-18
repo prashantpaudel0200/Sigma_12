@@ -1,17 +1,21 @@
 #container{
-    height: 500px;
+    height: 600px;
     width: 80%;
     background-color: blanchedalmond;
     margin: 10px auto;
     border: 2px solid black;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: flex-end
+    justify-content: flex-start;
+    /*flex-wrap: wrap;*/
+    align-items: flex-start; 
 }
 h1{
     text-align: center;
+}
+#org{
+    align-self: flex-start;
+    flex-basis: 300px;
 }
 
 #container div{
