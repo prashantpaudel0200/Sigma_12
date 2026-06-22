@@ -19,3 +19,17 @@
     text-align: center;
 
 }
+#one{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#two{
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+#three{
+    grid-row: 2/4;
+}
+#five{
+    grid-column-start: 3;
+}
