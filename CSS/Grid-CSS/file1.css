@@ -2,17 +2,20 @@
     height: 100px;
     width: 300px;
     background-color: pink;
-    animation-name: fontAnimation;
+    animation-name: widthAnimation;
     animation-duration: 2s;
     animation-timing-function: ease-in;
     animation-delay: 1s;
     animation-iteration-count: infinite;
-    animation-direction: reverse;
-
+    animation-direction: alternate;
 }
-@keyframes fontAnimation{
-    from{font-size: 20px;}
+@keyframes widthAnimation{
+    from{
+        font-size: 20px;
+        width: 50px;
+    }
     to{
-        font-size: 40px;
+        font-size: 55px;
+        width: 300px;
     }
 }
