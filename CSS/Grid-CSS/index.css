@@ -3,23 +3,25 @@
     height: 300px;
     background-color: yellow;
     display: grid;
+    
     /* grid-template-rows: 50px 50px 50px 50px;
     grid-template-columns: 100px 100px 100px 100px 100px; */
     grid-template-rows: repeat(4,1fr);
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px;
     column-gap: 10px;
+    place-items: center;
 
 }
 .items{
-    /* width: 100px;
-    height: 50px; */
+     width: 100px;
+    height: 50px; 
     background-color: yellowgreen;
     border: 2px solid black;
     text-align: center;
 
 }
-#one{
+/* #one{
     grid-column-start: 1;
     grid-column-end: 4;
 }
@@ -32,4 +34,4 @@
 }
 #five{
     grid-column-start: 3;
-}
+} */
