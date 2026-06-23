@@ -14,3 +14,8 @@ h1{
         background-color: blue;
     }
 }
+@media (orientation: landscape) {
+    h1{
+        background-color: orange;
+    }    
+}
