@@ -8,9 +8,39 @@
 <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-<button>CLICK ME</button>
-<input class="btn btn-primary" type="submit" value="Submit">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+            <li><a class="dropdown-item" href="#">Visit us</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 <div class="container">
     <p>Hello <br>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae alias illo dolorum repellat assumenda! Impedit cumque laudantium exercitationem soluta vitae, veritatis magnam? Eos laboriosam earum in, nostrum odit impedit totam.
@@ -20,24 +50,31 @@
     Aut itaque dolor amet alias harum ducimus distinctio quos asperiores impedit fuga laborum vitae, consequuntur voluptate praesentium? Consectetur, deleniti. Repellat incidunt quae non adipisci similique eveniet corporis veniam? Repellat, saepe!
     </p>
 </div>
-
 <button type="button" class="btn btn-dark">Join here</button>
 <button type="button" class="btn btn-success" disabled>Join here</button>
 <button type="button" class="btn btn-light">Join here</button>
 <button type="button" class="btn btn-outline-warning">Join here</button>
 <button type="button" class="btn btn-outline-link">Join here</button>
-
-
 <br>
 <br>
-<button type="button" class="btn btn-primary position-relative">
-  Inbox
-  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
-    <span class="visually-hidden">unread messages</span>
-  </span>
-</button>
+<!-- Code for card -->
+<div class="card" style="width: 18rem;">
+  <img src="data:image/png;base64,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" class="card-img-top" alt="Product Picture">
+  <div class="card-body">
+    <h5 class="card-title">House on sale</h5>
+    <p class="card-text">Premium House located at the heart of kathmandu is on sale. Offer Offer Offer! </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 
+
+
+
+
+
+
+<!--Submit Button-->
+<input class="btn btn-primary" type="submit" value="Submit" id="submit">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </body>
