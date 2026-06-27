@@ -1,0 +1,12 @@
+h1{
+    background-color: pink;
+}
+#test{
+    background-color: var(--bs-secondary-bg);
+}
+#one{
+    background-color: var(--bs-warning-border-subtle);
+    border: 1px solid;
+    border-color: var(--bs-warning-border-subtle);
+
+}
