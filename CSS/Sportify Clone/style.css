@@ -5,10 +5,13 @@ body {
     color: white;
     overflow:hidden;
 }
+
 .main{
     display: flex;
     height: 100vh;
+    padding: 0.5rem;
 }
+
 .sidebar{
     background-color:black;
     width: 340px;
@@ -36,18 +39,52 @@ body {
     font-size: 1rem;
     margin-left: 1rem;
 }
-#search{
+.search{
     opacity: 0.75;
 }
-#search:hover{
+.search:hover{
     opacity: 1;
 }
+.library{
+    background-color: black;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.75rem;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    height: 4rem;
+}
+.lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+.icons i{
+    margin-right: 1rem;
+}
+
+
 .main-content{
     background-color:#121212;
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
 }
+
+
+
+
+
+
+
 .music-player{
     background-color: black;
     position: fixed;
