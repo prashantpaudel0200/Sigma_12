@@ -101,11 +101,15 @@ The project focuses on:
 ------------------------------------------------------------------------
 
 ## 📸 Screenshots
-Example:
-
+Full Screen
 ![Spotify Clone Home Page](./Picturex/final1.png)
-![Spotify Clone Responsive](./Picturex/final1.png)
-![Spotify Clone Without Sidebar](./Picturex/final1.png)
+
+
+Medium Size
+![Spotify Clone Responsive](./Picturex/final2.png)
+
+Small Screen -without sidebar
+![Spotify Clone Without Sidebar](./Picturex/final3.png)
 
 
 
