@@ -108,6 +108,7 @@ body {
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
 }
 .sticky-nav{
     position: sticky;
@@ -134,37 +135,34 @@ body {
         display: none;
     }
 }
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 700;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+.f{
+    display: flex;
+    flex-wrap: wrap;
+}
 .music-player{
     background-color: black;
     position: fixed;
