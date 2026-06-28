@@ -103,27 +103,61 @@ body {
 .inc{
     height: 10rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main-content{
     background-color:#121212;
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
 }
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    margin-left:0.5rem ;
+}
+.nav-images img{
+    height: 2rem;
+}
+.nav-items{
+    margin-right: 1.5rem;
+}
+.dark-badge{
+    color: white;
+    background-color: black;
+}
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
