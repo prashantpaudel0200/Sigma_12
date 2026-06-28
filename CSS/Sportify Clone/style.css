@@ -193,6 +193,7 @@ body {
     bottom: 0;
     height: 72px;
     width: 100%;
+    padding-top: 3px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -231,9 +232,34 @@ body {
     cursor: pointer;
     height: 0.5rem;
 }
-
-
 a {
     text-decoration: none;
     color: white;
+}
+.album{
+    display: flex;
+}
+.song_name{
+    font-weight: 600;
+    opacity: 1;
+    margin-left: 1rem;
+    justify-content: left;
+    align-items: center;
+}
+.singer{
+    opacity: 0.65;
+}
+.music-player .album div img{
+    height: 5rem;
+    width: 5rem;
+}
+.symbols {
+    margin-left: 1rem;
+    color:white
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem 0 2rem;
+    opacity: 0.7;
 }

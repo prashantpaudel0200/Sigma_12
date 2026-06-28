@@ -15,7 +15,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="main">
         <div class="sidebar hide2">
@@ -39,9 +38,7 @@
                         <i class="fa-solid fa-plus"></i>
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
-
                 </div>
-
                 <div class="lib-boxes">
                     <div class="box">
                         <p class="box-p1">Create your first playlist</p>
@@ -56,9 +53,7 @@
                 </div>
             </div>
         </div>
-
         <div class="main-content">
-
             <div class="sticky-nav">
                 <div class="nav-images">
                     <img src="./Picturex/backward_icon.png">
@@ -73,7 +68,6 @@
                     <i class="fa-regular fa-user"></i>
                 </div>
             </div>
-
             <div class="cards">
                 <h2>Recently Played</h2>
                 <div class="cards-container">
@@ -120,7 +114,6 @@
                         <p class="card-info">Your daily updates of the most played...</p>
                     </div>
                 </div>
-
                 <div class="cards-container ">
                     <div class="card">
                         <img src="./Picturex/card1img.jpeg" class="card-img">
@@ -134,12 +127,25 @@
             </div>
         </div>
         <div class="music-player">
-            <div class="album"></div>
+            <div class="album">
+                <div class="song" id="playing">
+                    <img src="./Picturex/bardali.jpg">
+                </div>
+                <div class="song_name">
+                    Bardali
+                    <div class="singer">Sushant K.C</div>
+                </div>
+                <div class="symbols" id="sym">
+                    &#9825;
+                    <i class="fa-solid fa-picture-in-picture"></i>
+                </div>
+            </div>
             <div class="player">
                 <div class="player-controls">
                     <img src="./Picturex/player_icon1.png" class="player-control-icon">
                     <img src="./Picturex/player_icon2.png" class="player-control-icon">
-                    <img src="./Picturex/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 1.9rem;">
+                    <img src="./Picturex/player_icon3.png" class="player-control-icon"
+                        style="opacity: 1; height: 1.9rem;">
                     <img src="./Picturex/player_icon4.png" class="player-control-icon">
                     <img src="./Picturex/player_icon5.png" class="player-control-icon">
 
@@ -148,12 +154,16 @@
                     <span class="curr-time"> 0:00</span>
                     <input type="range" min="0" max="100" class="progress-bar" step="1">
                     <span class="total-time"> 3:33</span>
-
                 </div>
             </div>
-            <div class="controls"></div>
+            <div class="controls">
+                <i class="fa-brands fa-chromecast search"></i>
+                <i class="fa-solid fa-microphone search"></i>
+                <i class="fa-solid fa-share-nodes search"></i>
+                <i class="fa-solid fa-volume-high search"></i>
+                <input type="range">
+            </div>
         </div>
     </div>
 </body>
-
 </html>
