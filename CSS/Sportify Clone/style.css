@@ -118,7 +118,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0 1rem 0;
-    margin-left:0.5rem ;
+    margin-left: 0rem ;
+    z-index: 1;
 }
 .nav-images img{
     height: 2rem;
@@ -162,6 +163,24 @@ body {
 .f{
     display: flex;
     flex-wrap: wrap;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+
+}
+.card:hover{
+    border: 1.5px solid white;
+    box-shadow: 2px 4px 30px gray;
+    transition-duration: 0.01s;
 }
 .music-player{
     background-color: black;
