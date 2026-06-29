@@ -1,0 +1,1 @@
+let number=prompt("Enter a number");
