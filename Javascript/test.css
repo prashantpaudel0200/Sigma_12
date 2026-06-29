@@ -1,0 +1,17 @@
+.opner{
+    background-color: red;
+    color: black;
+    display: inline-block;
+}
+.siderbar{
+    display: flex;
+    position: absolute;
+    left: -300px;
+    
+}
+.opner:hover{
+    .siderbar{
+        position: absolute;
+        left: 10px;
+    }
+}
