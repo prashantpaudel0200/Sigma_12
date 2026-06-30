@@ -22,3 +22,6 @@ switch(num){
         console.log("Saturday");
         break;
 }
+alert("Stay Alert");
+console.error("Alert");
+console.warn("Warning");
