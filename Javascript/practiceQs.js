@@ -26,7 +26,13 @@
 //         console.log("Refresh and enter valid Quater Number.");
 // }
 // let password=prompt("Enter your password");
-let message='Helloworld';
-console.log("Message before methods:",message);
-let newmessage=message.trim().toUpperCase();
-console.log(newmessage);
+// let message='Helloworld';
+// console.log("Message before methods:",message);
+// let newmessage=message.trim().toUpperCase();
+// console.log(newmessage);
+let msg="IloveCoding.";
+let array=["Prashant", "Pravin","Laxmi","Kamal"];
+let info=["Prashant",19, "B.Sc. CSIT"];
+let fruits=["Mango","Apple","Pineapple"];
+let fruits[0]="Banana";
+let fruits[5]="Orange";
