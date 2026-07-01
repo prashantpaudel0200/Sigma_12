@@ -30,9 +30,11 @@
 // console.log("Message before methods:",message);
 // let newmessage=message.trim().toUpperCase();
 // console.log(newmessage);
-let msg="IloveCoding.";
-let array=["Prashant", "Pravin","Laxmi","Kamal"];
-let info=["Prashant",19, "B.Sc. CSIT"];
-let fruits=["Mango","Apple","Pineapple"];
-let fruits[0]="Banana";
-let fruits[5]="Orange";
+// let msg="IloveCoding.";
+// let array=["Prashant", "Pravin","Laxmi","Kamal"];
+// let info=["Prashant",19, "B.Sc. CSIT"];
+let fruits = ["Mango","Apple","Pineapple"];
+fruits[0] = "Banana";
+fruits[5] = "Orange";
+fruits.push("Grapes");
+fruits.pop();
