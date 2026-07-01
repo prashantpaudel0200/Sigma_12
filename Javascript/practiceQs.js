@@ -25,4 +25,8 @@
 //     default:
 //         console.log("Refresh and enter valid Quater Number.");
 // }
-let password=prompt("Enter your password");
+// let password=prompt("Enter your password");
+let message='Helloworld';
+console.log("Message before methods:",message);
+let newmessage=message.trim().toUpperCase();
+console.log(newmessage);
