@@ -41,3 +41,6 @@ fruits.pop();
 fruits.splice(1,1,"Papaya");
 fruits.sort();
 console.log(fruits);
+let num=[[1,2],[3,4],[6,7],[500,100]];
+alert(num);
+console.log(num[1][1]);
