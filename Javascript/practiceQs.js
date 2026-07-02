@@ -38,3 +38,4 @@ fruits[0] = "Banana";
 fruits[5] = "Orange";
 fruits.push("Grapes");
 fruits.pop();
+fruits.splice(1,1,"Papaya");
