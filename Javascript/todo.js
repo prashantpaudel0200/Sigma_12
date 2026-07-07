@@ -17,7 +17,12 @@ while(true){
         todo.push(task);
         console.log("task added");
     } else if(req == "delete"){
-
+        let idx = prompt("Please Enter the index you want to delete: ");
+        idx-=1;
+        todo.splice(idx, 1);
+        console.log("Task Deleted");
+    } else {
+        console.log("Invalid Request");
     }
     req = prompt("Please Enter your request: ");
 }
