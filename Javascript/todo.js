@@ -1,39 +1,23 @@
-// let todo=[];
-// let req = prompt("Please enter your request:");
-
-// while(true) {
-//     if(req == "quit"){
-//         console.log("Quiting App");
-//         break;
-//     }
-//     if(req === "list"){
-//         console.log("--------------------");
-//         for(task of todo){
-//             console.log(tast);
-//         }
-//         console.log("--------------------");
-//     } else if(req === "add"){
-//         let task = prompt("Add new task:");
-//         todo.push(task);
-//         console.log("Task Added Successfully.");
-//     }
-//     //  else if( req === "delete");
-//     // req = prompt("Please enter your request:");
-// }
 let todo= [];
-let req = prompt("Please enter your request: ");
-while (true){
+let req = prompt("Please Enter your Request: ");
+while(true){
     if(req == "quit"){
-        console.log("Quiting App");
+        console.log("Quitting App");
+        break;
     }
-    if(req == "list"){
+
+    if(req == "list") {
         console.log("--------------------");
-        for(task of todo){
-             console.log(task);
+        for(let i=0; i< todo.length; i++){
+            console.log((i+1), todo[i]);
         }
         console.log("--------------------");
+    } else if(req == "add"){
+        let task = prompt("Please Enter the task you want to add: ");
+        todo.push(task);
+        console.log("task added");
+    } else if(req == "delete"){
+
     }
-    else if(req == "add"){
-        let temp = prompt
-    }
+    req = prompt("Please Enter your request: ");
 }
