@@ -1,0 +1,21 @@
+header{
+    background-color: #184698;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-left: 5rem;
+    padding: 2rem;
+}
+.items button{
+    
+}
