@@ -1,23 +1,31 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 class Student
 {
-    private:
+private:
     int marks;
-    
-    public:
+
+public:
     void setMark(int m);
     void display();
 };
-void Student::setMark(int m){
-    marks=m;
+
+void Student::setMark(int m)
+{
+    marks = m;
 }
-void Student::display(){
-    cout<<"Marks is "<<marks;
+
+void Student::display()
+{
+    cout << "Marks is " << marks;
 }
-int main(){
+
+int main()
+{
     Student s1;
+
     s1.setMark(90);
     s1.display();
+
     return 0;
 }
