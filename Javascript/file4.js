@@ -7,3 +7,6 @@ for(i = 0; i < arr.length; i++){
             arr.splice(i, 1);
         }
 }
+console.log(arr);
+arr.splice(5, 0 , 5,5,5);
+console.log(arr);
