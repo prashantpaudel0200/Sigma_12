@@ -15,3 +15,4 @@ const info = [
         address : "Waling, Syangja"
     }
 ];
+info[0].gender = "Male";
