@@ -11,7 +11,6 @@ header{
 .container {
     display: flex;
     align-items: center;
-    flex-direction: column;
 }
 .line1{
     max-width: 1200px;
@@ -35,6 +34,7 @@ header{
 .items{
     display: flex;
     gap:40px;
+    cursor: pointer;
 }
 .group1{
     display: flex;
@@ -52,6 +52,7 @@ header{
     color:rgb(58, 58, 230);
     align-items: center;
     border-radius: 4px;
+    cursor: pointer;
 
     display: flex;
     justify-content: center;
@@ -61,20 +62,38 @@ ul {
     list-style: none;
 }
 .line2{
-    max-width: 1200px;
+    width: min(1200px, calc(100% - 48px));
     height: 80px;
-    width: 100%;
-
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .line2 ul{
     display: flex;
-    
+    gap: 40px;
+}
+#stays{
+    border: 2px solid white;
+    padding: 10px 17px;
+    border-radius: 20px 20px;
+}
+.line2 ul li{
+    padding: 10px 17px;
+}
+.line2 ul li:hover{
+    background: rgba(211, 209, 209, 0.1);
+    border-radius: 20px 20px;
 }
 .group1 button{
     background: none;
     border: none;
     cursor: pointer;
+}
+div.group1:hover{
+    background: rgba(211, 209, 209, 0.1);
+
+}
+div.group2 :hover{
+    background: rgba(211, 209, 209, 0.1);
+    border-radius: 2px 2px;
 }
