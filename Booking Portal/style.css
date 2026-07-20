@@ -1,10 +1,12 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 header{
     background-color:#184698;
     color: white;
+    width: 100%;
 }
 .container {
     display: flex;
@@ -12,32 +14,60 @@ header{
     flex-direction: column;
 }
 .line1{
+    max-width: 1200px;
+    height: 80px;
+    width: 100%;
+    margin: 0 auto; /*Not working*/
+    padding: 0 24px;
+
     display: flex;
-    height: 55px;
-    padding: 20px;
     align-items: center;
     justify-content: space-between;
 }
 .logo{
-    display: flex;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 32px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    display: flex;
+    align-items: center;
 }
 .items{
     display: flex;
+    gap:40px;
 }
 .group1{
     display: flex;
+    gap: 32px;
+    align-items: center;
 }
 .group2{
     display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.group2 button{
+    height: 34px;
+    width: 64px;
+    color:rgb(58, 58, 230);
+    align-items: center;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 ul {
     list-style: none;
 }
 .line2{
+    max-width: 1200px;
+    height: 80px;
+    width: 100%;
+
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .line2 ul{
     display: flex;
