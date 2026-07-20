@@ -89,11 +89,14 @@ ul {
     border: none;
     cursor: pointer;
 }
-div.group1:hover{
+div.group1 span:hover{
+    border-radius: 2px 2px;
     background: rgba(211, 209, 209, 0.1);
+    padding: 13px 0;
 
 }
-div.group2 :hover{
+div.group2 span:hover{
     background: rgba(211, 209, 209, 0.1);
     border-radius: 2px 2px;
+    padding: 13px 0;
 }
