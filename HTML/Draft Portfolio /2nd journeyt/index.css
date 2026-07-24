@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: #0f1111;
+    color: white;
+    height: 60px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 200px;
+}
+#logo{
+    margin-left: 2px;
+    font-size: 25px;
+    color: #f08804;
+}
+input{
+    margin-left: 200px;
+}
+button{
+    background-color: #f08804;
+    color: white;
+}
+
+.content{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+footer{
+    background-color: #0f1111;
+    color: white;
+    text-align: center;
+    
+}
+#c1{
+    height: 570px;
+}

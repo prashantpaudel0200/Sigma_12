@@ -1,0 +1,27 @@
+div{
+height: 1100;
+width: 250px;
+background-color: black;
+padding: 50px;
+}
+#c1{
+    height:100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    padding-top: 30px;
+}
+#c2{
+    height:100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    padding-top: 30px;
+}
+#c3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    padding-top: 30px;
+}
