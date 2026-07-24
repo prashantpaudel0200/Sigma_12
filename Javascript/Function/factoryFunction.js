@@ -1,13 +1,16 @@
 function oddEvenTest(request){
     if(request == "odd"){
-        return function(n){
-                console.log(!(n%2 == 0));
+        let odd = function(n) {
+            console.log(!(n%2 == 0));
         }
-    } else if(request == "even"){
-        return function(n){
-            console.log(n%2 ==0);
+        return odd;
+        } else if(request == "even"){
+            let even = function(n) {
+                console.log(n%2 == 0);
+            }
+            return even;
+        } else {
+            console.log("Wrong request")
         }
-    } else {
-        console.log("Wrong request");
     }
-}
+    let request = "odd"
