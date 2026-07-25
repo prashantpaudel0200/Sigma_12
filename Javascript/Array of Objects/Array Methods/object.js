@@ -10,6 +10,14 @@ let arr = [{
     name:"Manasvi",
     marks:99
 }];
-arr.forEach((student) =>{
-    console.log(student.name);
-});
+// arr.forEach((student) =>{
+//     console.log(student.name);
+// });
+
+let num = [10,22,33,44,55];
+let double = num.map((el) =>{
+    return el*2;
+})
+let gpa = arr.map((el)=>{
+    return el.marks/25;
+})
