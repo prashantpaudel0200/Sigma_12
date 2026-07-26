@@ -32,6 +32,9 @@ let less50 = num.filter((el)=>{
 })
 
 let status = num.every((el)=>el%2==0);
-console.log([2,4,6,0].every((el) => el%2 == 0));
+// console.log([2,4,6,0].every((el) => el%2 == 0));
 
 let check = num.some((el)=> el%2 ==0);
+
+let result = num.reduce((rev, el)=>
+    rev + el)
