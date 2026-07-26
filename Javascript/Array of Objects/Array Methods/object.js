@@ -30,3 +30,8 @@ let ans = num.filter((el) =>{
 let less50 = num.filter((el)=>{
     return el<50;
 })
+
+let status = num.every((el)=>el%2==0);
+console.log([2,4,6,0].every((el) => el%2 == 0));
+
+let check = num.some((el)=> el%2 ==0);
