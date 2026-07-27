@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Student
+{
+    int roll;
+    string name;
+
+public:
+    Student(int r, string n)
+    {
+        roll = r;
+        name = n;
+    }
+
+    void display()
+    {
+        cout << "Roll No: " << roll << endl;
+        cout << "Name: " << name << endl;
+    }
+};
+
+int main()
+{
+    Student s1(101, "Prashant");
+    Student s2 = s1;
+
+    cout << "--Original Object--" << endl;
+    s1.display();
+
+    cout << "\n--Copied Object--" << endl;
+    s2.display();
+
+    return 0;
+}
