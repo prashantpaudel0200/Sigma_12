@@ -18,4 +18,5 @@ let heading = document.querySelector('h1');
 let image = document.querySelector('img')
 console.dir(image);
 console.dir(image.getAttribute('id'));
-console.dir(image.setAttribute('id', 'spiderimage'));
+// console.dir(image.setAttribute('id', 'spiderimage'));
+image.setAttribute('src', 'assets/creation_1.png');
