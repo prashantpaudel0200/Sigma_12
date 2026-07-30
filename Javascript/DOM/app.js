@@ -14,3 +14,8 @@
 
 let heading = document.querySelector('h1');
 // heading.innerHTML = (`<u>${heading.innerText}</u>`)
+
+let image = document.querySelector('img')
+console.dir(image);
+console.dir(image.getAttribute('id'));
+console.dir(image.setAttribute('id', 'spiderimage'));
