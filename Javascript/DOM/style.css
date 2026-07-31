@@ -1,6 +1,14 @@
 body {
   font-family: Arial;
 }
+.green{
+  color: green;
+}
+.underline{
+  text-decoration: underline purple wavy;
+}
+
+
 
 #mainImg {
   width: 35%;
