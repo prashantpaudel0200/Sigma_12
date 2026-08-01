@@ -1,6 +1,13 @@
-let btn = document.querySelector("button");
-console.dir(btn);
+let btns = document.querySelectorAll("button");
+for(btn of btns){
+    btn.addEventListener("click", sayHello);
+    btn.addEventListener("mouseenter", sayName);
+}
 
-btn.onclick = function(){
-    alert("DO YOU WANT TO SUBMIT?");
+function sayHello() {
+    alert("HELLO!");
+}
+
+function sayName(){
+    alert("Hovered hmm?")
 }
