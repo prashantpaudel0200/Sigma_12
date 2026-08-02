@@ -21,3 +21,12 @@ function btnFlash(btn){
     }, 250);
 }
 
+function levelUp(){
+    level++;
+    h2.innerText =`Level ${level}`;
+    //choose random button
+    let randIdx = Math.floor(Math.random()* 4);
+    let randColor = btns[randIdx];
+    let randbtn = document.querySelector(`.${randColor}`)
+    btnFlash(randbtn);
+}
