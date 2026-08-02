@@ -3,6 +3,7 @@ let userSeq = [];
 let btns = ["red", "yellow", "green", "purple"];
 let started = false;
 let level = 0;
+let highestScore = "";
 let h2 = document.querySelector("h2");
 document.addEventListener("keypress", function(){
    if(started == false){
@@ -28,8 +29,6 @@ function levelUp(){
     let randbtn = document.querySelector(`.${randColor}`);
     gameSeq.push(randColor);
     btnFlash(randbtn);
-        
-    
     console.log(gameSeq);
 };
 
@@ -39,7 +38,15 @@ function checkAns(idx){
             setTimeout(levelUp, 1000);
         }
     } else{
-        h2.innerText = 'Game Over! Press any key to start.';
+        if(level > highestScore){
+            highestScore = level;
+}
+        let score = userSeq.length ;
+        h2.innerHTML = `Game Over! Your score is <b>${level}</b><br> Highest Score :${highestScore}<br>Press any key to start. `;
+        document.querySelector("body").style.background = "red";
+        setTimeout(function(){
+            document.querySelector("body").style.background = "white";
+        }, 150);
         reset();
     }
 };
@@ -53,7 +60,6 @@ function btnPress() {
 };
 
 let allbtns = document.querySelectorAll(".btn");
-
 for(btn of allbtns){
     btn.addEventListener("click", btnPress);
 }
