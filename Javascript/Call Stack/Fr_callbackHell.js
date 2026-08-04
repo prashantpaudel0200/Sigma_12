@@ -30,3 +30,12 @@ function save2Db(data){
     }
     });
 };
+
+
+let result = save2Db("Prashant Paudel");
+result.then(()=>{
+    console.log("Promise was resolved.");
+})
+.catch(()=>{
+    console.log("Promise was rejected!");
+})
