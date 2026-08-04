@@ -9,10 +9,15 @@ function changeColor(color, delay) {
 });
 }
 async function demo(){
+   try{ // Handling Rejection
    await changeColor("red", 1000);
    await changeColor("pink", 1000);
    await changeColor("yellow", 1000);
    await changeColor("blue", 1000);
+   } catch{ // executed it any error occurs in try block
+      console.log("Error Caught: 404 page not found")
+   }
+
 
 }
 
