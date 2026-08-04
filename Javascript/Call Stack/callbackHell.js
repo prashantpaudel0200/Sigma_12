@@ -8,31 +8,41 @@ function changeColor(color, delay) {
     }, delay);
 });
 }
+async function demo(){
+   await changeColor("red", 1000);
+   await changeColor("pink", 1000);
+   await changeColor("yellow", 1000);
+   await changeColor("blue", 1000);
 
-let requestPromise = changeColor("red", 1000)
- .then((result)=>{
-    console.log(result);
-    console.log("Color change");
-    return changeColor("green", 1000);
- })
- .then((result)=>{
-    console.log(result);
-    console.log("Color changed");
-    return changeColor("pink",2000)
- })
- .then((result)=>{
-    console.log(result);
-    console.log("Color changed")
-    return changeColor("blue", 1000);
- })
- .then((result)=>{
-    console.log(result);
-    console.log("Reached to final color");
- })
- .catch(()=>{
-    console.log("Color is not changed");
+}
+
+
+
+
+// let requestPromise = changeColor("red", 1000)
+//  .then((result)=>{
+//     console.log(result);
+//     console.log("Color change");
+//     return changeColor("green", 1000);
+//  })
+//  .then((result)=>{
+//     console.log(result);
+//     console.log("Color changed");
+//     return changeColor("pink",2000)
+//  })
+//  .then((result)=>{
+//     console.log(result);
+//     console.log("Color changed")
+//     return changeColor("blue", 1000);
+//  })
+//  .then((result)=>{
+//     console.log(result);
+//     console.log("Reached to final color");
+//  })
+//  .catch(()=>{
+//     console.log("Color is not changed");
     
- })
+//  })
 
 
 
