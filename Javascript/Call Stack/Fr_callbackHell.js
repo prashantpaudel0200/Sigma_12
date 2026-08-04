@@ -18,8 +18,6 @@
 //     }
 // );
 
-
-
 function save2Db(data){
     return new Promise((resolve, reject)=>{
         let internetSpeed = Math.floor(Math.random()*10)+1;
@@ -32,10 +30,18 @@ function save2Db(data){
 };
 
 
-let result = save2Db("Prashant Paudel");
-result.then(()=>{
-    console.log("Promise was resolved.");
-})
-.catch(()=>{
-    console.log("Promise was rejected!");
-})
+let result = save2Db("Prashant Paudel")
+ .then(()=>{
+    console.log("Data 1 saved");
+    return save2Db("Pravin Paudel");
+ })
+  .then(()=>{
+    console.log("Data2 Saved");
+    return save2Db("Laxmi Paudel");
+  })
+  .then(()=>{
+    console.log("Data 3 is saved");
+  })
+  .catch(()=>{
+    console.log("Failure, data is not saved!");
+  });
