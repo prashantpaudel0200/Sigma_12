@@ -17,4 +17,24 @@ btn.addEventListener("click", async ()=>{
     p.innerText = await getData();
 })
 
+let url2 = "https://dog.ceo/api/breeds/image/random";
+let btn2 = document.querySelector("#img");
 
+btn2.addEventListener("click", async()=>{
+    let img = document.querySelector("img");
+    let link = await getImage();
+    img.setAttribute("src", link); 
+})
+
+
+
+async function getImage(){
+    try{
+        let req = await axios.get(url2);
+        console.log(req.data.message);
+        return req.data.message;
+    }
+    catch(err){
+        console.log("Error- ",err);
+    }
+}
