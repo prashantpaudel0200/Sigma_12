@@ -22,10 +22,15 @@ btn.addEventListener("click", async()=>{
 let p =document.querySelector("p");
  function showarry(collary){
     let list = document.querySelector("#list");
+    list.innerText = "";
     for(coll of collary){
         console.log(coll.name);
         let li = document.createElement("li");
         li.innerText = coll.name;
         list.appendChild(li);
+        let p = document.createElement("p");
+        p.innerText = (`${coll["state-province"]} state, ${input.value}`);
+        
+        list.appendChild(p);
     }
  }
