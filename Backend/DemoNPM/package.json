@@ -1,0 +1,12 @@
+{
+  "name": "prashantpaudel",
+  "version": "1.5.9",
+  "description": "This is my first npm project. I am loving doing this.",
+  "license": "ISC",
+  "author": "Prashant Paudel",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
