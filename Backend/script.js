@@ -4,7 +4,10 @@
 //     console.log("Hello ", i+1);
 // }
 
-let arg = process.argv;
-for(let i = 2; i< arg.length; i++){
-    console.log("Hello to ", arg[i]);
-}
+// let arg = process.argv;
+// for(let i = 2; i< arg.length; i++){
+//     console.log("Hello to ", arg[i]);
+// }
+
+const math = require("./math");
+console.log(math);
