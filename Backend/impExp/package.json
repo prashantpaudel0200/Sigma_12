@@ -1,0 +1,12 @@
+{
+  "name": "math",
+  "version": "1.0.0",
+  "description": "I am testing it will some mathematical function will work or not",
+  "license": "ISC",
+  "author": "Prashant Paudel",
+  "type": "module",
+  "main": "export.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
