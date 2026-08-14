@@ -1,0 +1,1 @@
+let random = MathFloor(Math.random()*10)+1
