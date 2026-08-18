@@ -7,20 +7,19 @@ class Teacher{
     protected:
         double salary;
     public:
+        string name;
+        string dept;
+        string subject;
     //Non-Parameterized Constructor
     Teacher(){
         dept = "Computer Science";
     }
     //Parameterized Constructor
-    Teacher(string n, string sub, double s){
-        name = n;
-        subject = sub;
-        salary = s;
+    Teacher(string name, string subject, double salary){
+        this->name = name;
+        this->subject = subject;
+        this->salary = salary;
     }
-    string name;
-    string dept;
-    string subject;
-
     //Methods / Member functions
     void changeDept(string newDept){
         dept = newDept;
@@ -41,6 +40,5 @@ int main(){
     // T1.setSalary(10000);
     cout<<T1.name<<endl;
     cout<<T1.getSalary()<<endl;
-
     return 0;
 }
