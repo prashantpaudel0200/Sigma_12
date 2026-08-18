@@ -7,6 +7,16 @@ class Teacher{
     protected:
         double salary;
     public:
+    //Non-Parameterized Constructor
+    Teacher(){
+        dept = "Computer Science";
+    }
+    //Parameterized Constructor
+    Teacher(string n, string sub, double s){
+        name = n;
+        subject = sub;
+        salary = s;
+    }
     string name;
     string dept;
     string subject;
@@ -24,15 +34,13 @@ class Teacher{
         return salary;
     }
 };
-
-
 int main(){
-    Teacher T1;
-    T1.name = "Prashant Paudel";
-    T1.dept = "Computer Science";
-    T1.subject = "C++";
-    T1.setSalary(100000);
-    double sal = T1.getSalary();
-    cout<<sal;
+    Teacher T1("Prashant","Java", 8000);
+    // T1.name = "Prashant Paudel";
+    // T1.subject = "C++";
+    // T1.setSalary(10000);
+    cout<<T1.name<<endl;
+    cout<<T1.getSalary()<<endl;
+
     return 0;
 }
