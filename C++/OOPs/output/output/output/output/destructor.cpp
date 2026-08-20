@@ -6,7 +6,7 @@ class Student{
     public:
         string name;
         double* cgpaPtr;
-
+    
     Student(string name, double cgpa){
         this->name = name;
         cgpaPtr = new double;
@@ -15,12 +15,16 @@ class Student{
 
     void getInfo(){
         cout<<"Name: "<<name<<endl;
-        cout<<"CGPA: "<<*cgpaPtr;
+        cout<<"CGPA: "<<*cgpaPtr<<endl;
+    }
+    ~Student(){
+        cout<<"Hi I am distructor.";
+        delete cgpaPtr;
     }
 };
 
 int main(){
-    Student s1("Prashant", 9.1);
+    Student s1("Prashant Paudel", 9.2);
     s1.getInfo();
     return 0;
 }
