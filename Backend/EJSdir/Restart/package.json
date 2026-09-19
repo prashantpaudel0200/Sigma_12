@@ -1,0 +1,15 @@
+{
+  "name": "package.json",
+  "version": "1.0.1",
+  "description": "\"Restarting everything from begining",
+  "author": "Prashant Paudel",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  }
+}
