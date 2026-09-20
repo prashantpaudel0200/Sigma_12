@@ -15,9 +15,9 @@ app.get("/rollDice", (req, res)=>{
     res.render("rolldice", {diceNum});
 });
 
-app.get("/ig/:instagram", (req, res)=>{
+app.get("/ig/:username", (req, res)=>{
     let { username } = req.params;
-    console.log(username);
+    res.render("instagram.ejs", {username})
 })
 
 app.listen(port, ()=>{
