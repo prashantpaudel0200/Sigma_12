@@ -16,9 +16,9 @@ app.get("/rollDice", (req, res)=>{
 });
 
 app.get("/ig/:username", (req, res)=>{
-    const followers = ["adam", "eve", "michiale", "bob"];
-    let { username } = req.params;
-    res.render("instagram.ejs", {username, followers})
+    const instaData = require("./data.json");
+    console.log(instaData);
+    res.render("instagram.ejs");
 })
 
 app.listen(port, ()=>{
