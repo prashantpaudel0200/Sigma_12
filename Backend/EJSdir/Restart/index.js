@@ -10,18 +10,20 @@ app.get("/", (req, res)=>{
     res.render("home.ejs");
 });
 
-app.get("/rollDice", (req, res)=>{
-    let diceNum = Math.floor(Math.random()*6+1);
-    res.render("rolldice", {diceNum});
-});
-
 app.get("/ig/:username", (req, res)=>{
+    let {username}= req.params;
     const instaData = require("./data.json");
     console.log(instaData);
-    res.render("instagram.ejs");
+    data = instaData[username];
+    console.log(data);
+    res.render("instagram.ejs", data);
 })
 
 app.listen(port, ()=>{
     console.log(`Listening on port ${port}`);
 });
 
+// app.get("/rollDice", (req, res)=>{
+//     let diceNum = Math.floor(Math.random()*6+1);
+//     res.render("rolldice", {diceNum});
+// });
