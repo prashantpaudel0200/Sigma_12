@@ -28,7 +28,7 @@ app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
 
-// app.get("/rollDice", (req, res)=>{
-//     let diceNum = Math.floor(Math.random()*6+1);
-//     res.render("rolldice", {diceNum});
-// });
+app.get("/rollDice", (req, res)=>{
+    let diceNum = Math.floor(Math.random()*6+1);
+    res.render("rolldice", {diceNum});
+});

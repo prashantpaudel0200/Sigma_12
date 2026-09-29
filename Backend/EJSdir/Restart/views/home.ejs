@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
-</head>
+<%- include("includes/head.ejs")%>
 <body>
     <h1>This is a home page.</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis molestias sed ratione vero eum architecto impedit 
@@ -12,5 +6,7 @@
     </p>
    <h1> <%= 3+2%></h1>
     <button>Click me</button>
+    <%- include("includes/footer.ejs") %>
+
 </body>
 </html>
