@@ -13,10 +13,14 @@ app.get("/", (req, res)=>{
 app.get("/ig/:username", (req, res)=>{
     let {username}= req.params;
     const instaData = require("./data.json");
-    console.log(instaData);
-    data = instaData[username];
+    const data = instaData[username];
     console.log(data);
-    res.render("instagram.ejs", data);
+    if(data){
+        res.render("instagram.ejs", { data });
+    } else{
+        res.render("error.ejs");
+    }
+    
 })
 
 app.listen(port, ()=>{
