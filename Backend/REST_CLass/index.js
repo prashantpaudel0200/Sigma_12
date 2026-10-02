@@ -39,9 +39,9 @@ app.get("/post/new", (req, res)=>{
 })
 
 app.post("/posts", (req, res)=>{
-    res.send("Post request working");
     let { username, content} = req.body;
     posts.push({username, content});
+    res.redirect("/posts");
 })
 
 app.listen(port, () => {
