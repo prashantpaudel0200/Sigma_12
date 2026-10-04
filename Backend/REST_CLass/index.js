@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 8080;
 const path = require("path");
+const  {v4 : uuidv4} = require("uuid");
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -13,17 +14,17 @@ app.use(express.json());//PARSE JSON DATA
 
 let posts = [
     {
-        id: "1a",
+        id: uuidv4(),
         username: "prashantpdl",
         content: "I love coding"
     },
     {
-        id: "2b", 
+        id: uuidv4(), 
         username: "nishanshrestha",
         content: "I need my migration certificate"
     },
     {
-        id: "3c",
+        id: uuidv4(),
         username: "bidurlamichhane",
         content: "Need more focus in life"
     }
@@ -43,7 +44,8 @@ app.get("/post/new", (req, res)=>{
 
 app.post("/posts", (req, res)=>{
     let { username, content} = req.body;
-    posts.push({username, content});
+    let id = uuidv4();
+    posts.push({id, username, content});
     res.redirect("/posts");
 })
 
