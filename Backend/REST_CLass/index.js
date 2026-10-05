@@ -32,10 +32,6 @@ let posts = [
     }
 ]
 
-
-
-
-
 app.get("/posts", (req, res) => {
     res.render("index.ejs", { posts });
 })
@@ -71,6 +67,11 @@ app.get("/posts/:id/edit", (req, res)=>{
     res.render("edit.ejs", {post});
 })
 
+app.delete("/post/:id", (req, res)=>{
+    let {id} = req.params;
+    posts = posts.filter((p)=> id !== p.id);
+    res.redirect("/posts");
+})
 app.listen(port, () => {
     console.log(`Listening on PORT: ${port}`);
 });
