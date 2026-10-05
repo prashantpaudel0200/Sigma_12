@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true })); //PARSE URL ENCODED DATA
 app.use(express.json());//PARSE JSON DATA
 app.use(methodOverride("_method"));
 
+
 let posts = [
     {
         id: uuidv4(),
