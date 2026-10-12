@@ -6,15 +6,22 @@ const connection = mysql.createConnection({
   password: 'your_password'
 });
 
+let q = "INSERT INTO user (ID, USERNAME, EMAIL, Password) VALUES(?, ?, ?, ?)";
+let user = [123, "123_newuser", "abc@gmail.com", "abcKOpassword"];
+
 try{
-    connection.query("SHOW TABLES", (err, result)=>{
+    connection.query(q, user, (err, result)=>{
     if(err) throw err;
     console.log(result);
+    console.log(result.length);
+    console.log(result[0]);
+    console.log(result[1]);
 });
 } catch(err){
     console.log(err);
 }
 connection.end();
+
 
 
 
