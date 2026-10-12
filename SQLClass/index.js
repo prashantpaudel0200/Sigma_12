@@ -1,4 +1,7 @@
 const mysql = require("mysql2");
+const { faker } = require('@faker-js/faker');
+
+
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'admin',
@@ -7,24 +10,24 @@ const connection = mysql.createConnection({
 });
 
 
-let q = "INSERT INTO user (ID, USERNAME, EMAIL, Password) VALUES ?";
+// let q = "INSERT INTO user (ID, USERNAME, EMAIL, Password) VALUES ?";
 
-let user = [
-    [12333, "12333_newuser", "abcccccc@gmail.com", "abccccKOpassword"],
-    [133, "133_newuser", "abbbbc@gmail.com", "abbbbbcKOpassword"],
-    [122, "122_newuser", "acccc@gmail.com", "acccccKOpassword"]
-];
+// let user = [
+//     [12333, "12333_newuser", "abcccccc@gmail.com", "abccccKOpassword"],
+//     [133, "133_newuser", "abbbbc@gmail.com", "abbbbbcKOpassword"],
+//     [122, "122_newuser", "acccc@gmail.com", "acccccKOpassword"]
+// ];
 
-connection.query(q, [user], (err, result) => {
-    if (err) {
-        console.log(err);
-        return;
-    }
+// connection.query(q, [user], (err, result) => {
+//     if (err) {
+//         console.log(err);
+//         return;
+//     }
 
-    console.log(result);
-    console.log(result.affectedRows);
-});
-connection.end();
+//     console.log(result);
+//     console.log(result.affectedRows);
+// });
+// connection.end();
 
 // try{
 //     connection.query("SHOW TABLES", (err, result)=>{
@@ -56,14 +59,29 @@ connection.end();
 
 
 
-const { faker } = require('@faker-js/faker');
+
+let q = "INSERT INTO user (ID,USERNAME, EMAIL, Password) VALUES ?";
 
 let getRandomUser = ()=> {
-  return {
-    id: faker.string.uuid(),
-    username: faker.internet.username(),
-    email: faker.internet.email(),
-    password: faker.internet.password()
-  };
+  return [
+    faker.string.uuid(),
+    faker.internet.username(),
+    faker.internet.email(),
+    faker.internet.password()
+  ];
+};
+
+let data = [];
+for(let i=1; i<= 100; i++){
+   data.push(getRandomUser());
 }
-console.log(getRandomUser());
+    connection.query(q, [data], (err, result) => {
+    if (err) {
+        console.log(err);
+        return;
+    }
+
+    console.log(result);
+    console.log(result.affectedRows);
+});
+connection.end();
