@@ -10,9 +10,12 @@
         This is the id: <%= user.ID %>
     </h1>
     
-    <input type="text" name="username" placeholder="Enter new username">
+    <input type="text" name="username" placeholder="<%= user.USERNAME %>">
+    <br>
+    <br>
+    <input type="password" name="password" placeholder="Enter Password">
     <form method="PATCH" action="/user"></form>
-    <form method="POST" action="/user?_method=PATCH">
+    <form method="POST" action="/user/<%= user.ID %>?_method=PATCH">
     <br>
     <br>
     <button> Update Now</button>
