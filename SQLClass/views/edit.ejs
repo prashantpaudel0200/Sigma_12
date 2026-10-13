@@ -7,10 +7,12 @@
 </head>
 <body>
     <h1>
-        This is the id: <%= id %>
+        This is the id: <%= user.ID %>
     </h1>
+    
     <input type="text" name="username" placeholder="Enter new username">
     <form method="PATCH" action="/user"></form>
+    <form method="POST" action="/user?_method=PATCH">
     <br>
     <br>
     <button> Update Now</button>

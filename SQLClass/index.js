@@ -61,7 +61,21 @@ app.get("/user", (req, res)=>{
 //EDIT ROUTE
 app.get("/user/:id/edit", (req, res)=>{
   let { id } = req.params;
-  res.render("edit.ejs", { id });
+  let q = ` SELECT * FROM user WHERE ID = '${id}'`;
+
+    try{
+    connection.query(q, (err, result) => {
+    if(err) throw err;
+    let user = result[0];
+    console.log(result);
+    res.render("edit.ejs", { user });
+
+
+}); 
+} catch (err) {
+   console.log(err);
+   res.send("Some error in DATABASE");
+};
 })
 
 
