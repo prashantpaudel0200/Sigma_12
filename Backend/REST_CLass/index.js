@@ -14,7 +14,6 @@ app.use(express.urlencoded({ extended: true })); //PARSE URL ENCODED DATA
 app.use(express.json());//PARSE JSON DATA
 app.use(methodOverride("_method"));
 
-
 let posts = [
     {
         id: uuidv4(),
@@ -73,6 +72,7 @@ app.delete("/post/:id", (req, res)=>{
     posts = posts.filter((p)=> id !== p.id);
     res.redirect("/posts");
 })
+
 app.listen(port, () => {
     console.log(`Listening on PORT: ${port}`);
 });
