@@ -46,15 +46,22 @@ app.get("/", (req, res)=>{
 app.get("/user", (req, res)=>{
   let q = `SELECT * FROM user`;
   try{
-    connection.query(q, (err, result) => {
+    connection.query(q, (err, users) => {
     if(err) throw err;
     // console.log(result);
-    res.send(result);
+    // res.send(result);
+    res.render("showuser.ejs", {users});
 }); 
 } catch (err) {
    console.log(err);
    res.send("Some error in DATABASE");
 };
+})
+
+//EDIT ROUTE
+app.get("/user/:id/edit", (req, res)=>{
+  let { id } = req.params;
+  res.render("edit.ejs", { id });
 })
 
 
