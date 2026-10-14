@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Welcome to <%= post.username %> Post </h1>
+
+    <div class="post">
+        <div class="id">
+            <a>ID: " <%= post.id %> "</a>
+        </div>
+        <div class="content">
+            <a>
+                <%= post.content %>
+            </a>
+        </div>
+        <form method="get" action="/insta/edit/<%= post.id %>" style="text-align: right;">
+           <button>Edit Content</button>
+        </form>
+
+    </div>
+    <button><a href="http://localhost:8080/insta" style="color: white;">Back to main page</a> </button>
+</body>
+
+</html>

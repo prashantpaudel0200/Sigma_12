@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit your post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="posts">
+     <h2>Edit your post</h2>
+    <p>Post id:<%= post.id  %></p>
+    
+    <p>Username: @<%= post.username%></p>
+    <form method="POST" action="/insta/<%= post.id%>?_method=PATCH">
+        <textarea rows="10" cols="35" name="content"><%= post.content %></textarea>
+        <br>
+        <button>Submit Now</button>
+    </form>
+    </div>
+</body>
+</html>

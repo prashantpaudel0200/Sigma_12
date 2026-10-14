@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" , href="/style.css">
+</head>
+
+<body>
+    <h3>Welcome to, <h1>Instaoraa</h1>
+    </h3>
+    <div class="posts">
+
+        <% for(post of posts){ %>
+            <div class="post">
+                <div class="username">
+                    @<%= post.username %>
+                </div>
+                <div class="content">
+                    <%= post.content %>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+
+                    <form method="get" action="/insta/<%= post.id %>/details">
+                        <button id="viewmore">View Details</button>
+                    </form>
+                </div>
+            </div>
+            <% } %>
+    </div>
+
+</body>
+
+</html>
