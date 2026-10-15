@@ -19,6 +19,11 @@ let posts = [
     },
     {
         id: uuidv4(),
+        username: "Ana_mika",
+        content: "Chota bachha Jindabad!!"
+    },
+    {
+        id: uuidv4(),
         username: "laxmipdl0222",
         content: "Pasal ma basdena kanxo."
     },
