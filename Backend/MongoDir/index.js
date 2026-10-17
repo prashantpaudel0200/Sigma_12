@@ -18,4 +18,25 @@ const userSchema = new mongoose.Schema({
     age: Number
 });
 
-const user = mongoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema);
+const Employee = mongoose.model("Employee", userSchema);
+
+const user1 = new User({
+    name: "Adam",
+    email: "adam@yahoo.com"
+});
+user1.save();
+
+const user2 = new User({
+    name: "Eve",
+    email: "eve123@gmail.com",
+    age: 23
+});
+
+user2.save()
+    .then((result)=>{
+        console.log("Insertion Successfull.");
+    })
+    .catch((err)=>{
+        console.log("Fail to insert.");
+    })
