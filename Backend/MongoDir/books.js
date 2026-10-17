@@ -25,3 +25,15 @@ const bookSchema = new mongoose.Schema({
 });
 const Book = mongoose.model("Book", bookSchema);
 
+let book1 = new Book({
+    name: "Mathematics-12",
+    author:"RD-Sharma",
+    price: 595
+});
+book1.save()
+    .then((res)=>{
+        console.log(res);
+    })
+    .catch((err)=>{
+        console.log(err);
+    });
