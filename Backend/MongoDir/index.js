@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema({
 });
 
 const User = mongoose.model("User", userSchema);
-const Employee = mongoose.model("Employee", userSchema);
+
 
 // const user1 = new User({
 //     name: "Adam",
@@ -41,17 +41,17 @@ const Employee = mongoose.model("Employee", userSchema);
 //         console.log("Fail to insert.");
 //     })
 
-User.insertMany([
-    {name:"Avash", email:"avash454@gmail.com", age: 12},
-    {name:"Biplov", email:"d_biplove@gmail.com", age:22},
-    {name:"Deepesh", email:"deepesh12@gmail.com", age:21}
-]).then((res)=>{
-    console.log("Multiple data is inserted");
-}).catch((err)=>{
-    console.log("Fail to insert multiple data");
-})
+// User.insertMany([
+//     {name:"Avash", email:"avash454@gmail.com", age: 12},
+//     {name:"Biplov", email:"d_biplove@gmail.com", age:22},
+//     {name:"Deepesh", email:"deepesh12@gmail.com", age:21}
+// ]).then((res)=>{
+//     console.log("Multiple data is inserted");
+// }).catch((err)=>{
+//     console.log("Fail to insert multiple data");
+// })
 
-User.find({})
+User.find({age:{$gt:20}})
     .then((res)=>{
         console.log(res);
     })
