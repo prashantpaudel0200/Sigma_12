@@ -21,7 +21,6 @@ main()
 async function main() {
   await mongoose.connect('mongodb://127.0.0.1:27017/whatsapp');
 }
-
 //INDEX ROUTE
 app.get("/chats", async (req, res)=>{
    let chats = await Chat.find();
@@ -31,12 +30,8 @@ app.get("/chats", async (req, res)=>{
 app.get("/chats/new", (req, res)=>{
     res.render("new.ejs");
 });
-
-app.get("/", (req, res)=>{
-    res.send("Everything is working");
-});
-
-app.post("/chats", (req, res)=>{
+//CREATE NEW CHAT
+app.post("/chats", async (req, res)=>{
     let { from, to, msg } = req.body;
     let newChat = new Chat({
         from: from,
@@ -44,15 +39,16 @@ app.post("/chats", (req, res)=>{
         msg: msg,
         created_at: new Date()
     });
-    newChat.save().catch(err=>{ console.log(err)});
+    await newChat.save().catch(err=>{ console.log(err)});
     res.redirect("/chats");
 });
+//PROVIDE EDIT FORM
 app.get("/chats/:id/edit", async (req, res)=>{
     let id = req.params.id;
     let chat = await Chat.findById(id);
     res.render("edit.ejs", {chat});
-})
-
+});
+//UPDATE MESSAGE OF PRE-EXISTING CHAT
 app.put("/chats/:id", async(req, res)=>{
     let id = req.params.id;
     let { msg: newMsg } = req.body;
@@ -63,6 +59,14 @@ app.put("/chats/:id", async(req, res)=>{
     );
     res.redirect("/chats");
 });
+//DELETE ROUTE
+app.delete("/chats/:id/delete",async (req, res)=>{
+    let id = req.params.id;
+    let chat = await Chat.findByIdAndDelete(id);
+    console.log("Message deleted");
+    res.redirect("/chats");
+});
+
 app.listen(8080, ()=>{
     console.log("Server is listening on port 8080");
 });
