@@ -1,0 +1,133 @@
+
+/* General page styling */
+body {
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eef3fc, #f8faff);
+    color: #172b4d;
+}
+
+/* Page heading */
+h3 {
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0 30px;
+    color: #172b4d;
+}
+
+/* Form container */
+form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(35, 65, 120, 0.10);
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* Form fields */
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Labels */
+label {
+    font-size: 17px;
+    font-weight: 600;
+    color: #172b4d;
+}
+
+/* Inputs and textarea */
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    font-size: 16px;
+    font-family: inherit;
+
+    border: 1.5px solid #d1dbea;
+    border-radius: 9px;
+    background-color: #fcfdff;
+
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Message area */
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Placeholder text */
+input::placeholder,
+textarea::placeholder {
+    color: #8a96ab;
+}
+
+/* Focus effect */
+input:focus,
+textarea:focus {
+    border-color: #3478f6;
+    box-shadow: 0 0 0 3px rgba(52, 120, 246, 0.12);
+    background-color: #ffffff;
+}
+
+/* Submit button */
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+
+    background: linear-gradient(135deg, #3478f6, #2463eb);
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 600;
+    font-family: inherit;
+
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(52, 120, 246, 0.25);
+}
+
+/* Button click effect */
+button:active {
+    transform: translateY(0);
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    form {
+        padding: 22px;
+        gap: 18px;
+    }
+
+    input,
+    textarea {
+        font-size: 15px;
+    }
+}
