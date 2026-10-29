@@ -21,16 +21,16 @@ const app = express();
 // } );
 
 
-app.use("/api", (req, res, next)=>{
+let checkToken = (req, res, next)=>{
     let { token } = req.query;
     if(token == "giveaccess"){
        return next();
     } else{
         res.send("ACCESS DENIED");
     }
-});
+};
 
-app.get("/api", (req, res) => { 
+app.get("/api", checkToken, (req, res) => { 
     res.send("data");
 })
 
