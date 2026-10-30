@@ -1,0 +1,196 @@
+
+/* =========================
+   GENERAL PAGE STYLING
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eef3fc, #f8faff);
+    color: #172b4d;
+}
+
+/* =========================
+   PAGE HEADING
+========================= */
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #172b4d;
+
+    margin: 15px 0 40px;
+}
+
+/* =========================
+   CHAT CARD
+========================= */
+
+.chat{
+    max-width: 750px;
+    margin: 0 auto 22px;
+    padding: 25px 30px;
+
+    background-color: #ffffff;
+    border: 1px solid #edf1f8;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 25px rgba(35, 65, 120, 0.07);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+/* Hover animation */
+
+.chat:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(35, 65, 120, 0.12);
+}
+
+/* Sender and receiver text */
+
+.chat > p {
+    font-size: 15px;
+    color: #64748b;
+    margin: 0 0 16px;
+    line-height: 1.6;
+}
+
+/* Highlight sender name */
+
+.chat > p:first-child {
+    color: #3478f6;
+    font-weight: 600;
+}
+
+/* Receiver section */
+
+.chat > p:last-child {
+    margin: 18px 0 0;
+}
+
+.chat > p:last-child i {
+    color: #3478f6;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* =========================
+   MESSAGE BOX
+========================= */
+
+.msg {
+    padding: 18px 20px;
+
+    background: #f3f7ff;
+    border-left: 4px solid #3478f6;
+    border-radius: 8px;
+
+    overflow-wrap: anywhere;
+}
+
+.msg p {
+    margin: 0;
+    color: #334155;
+
+    font-size: 16px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+}
+
+/* =========================
+   SEPARATOR
+========================= */
+
+hr {
+    display: none;
+}
+
+/* =========================
+   ADD MORE BUTTON
+========================= */
+
+form {
+    max-width: 750px;
+    margin: 30px auto 0;
+}
+
+.addMore {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #3478f6, #2463eb);
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(52, 120, 246, 0.15);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.addMore:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(52, 120, 246, 0.25);
+}
+
+.addMore:active {
+    transform: translateY(0);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .chat {
+        padding: 20px;
+        margin-bottom: 18px;
+    }
+
+    .msg {
+        padding: 15px;
+    }
+
+    .msg p {
+        font-size: 15px;
+    }
+
+    .addMore {
+        font-size: 16px;
+    }
+}
+.edit, .delete{
+    background-color: wheat;
+    color: black;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 40px;
+}
