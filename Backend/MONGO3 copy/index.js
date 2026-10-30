@@ -84,6 +84,21 @@ app.delete("/chats/:id/delete", async (req, res) => {
     console.log("Message deleted");
     res.redirect("/chats");
 });
+
+const handleValidationErr = (err)=>{
+    console.log("It is a validation error");
+    console.log(err.message);
+    return err;
+}
+
+app.use((err, req, res, next)=>{
+    console.log(err.name);
+    if(err.name = "ValidationError"){
+        handleValidationErr(err);
+    }
+    next(err);
+})
+
 //Error Handling middleware
 app.use((err, req, res, next) => {
     let { status = 500, message = "Some Error Occured" } = err;
