@@ -20,9 +20,6 @@ ul.addEventListener("click", function (event) {
         let listItem = event.target.parentElement;
         console.log(listItem);
         listItem.remove();
-
-
-
     }
 })
 
