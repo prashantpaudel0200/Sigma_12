@@ -46,7 +46,7 @@ const addData = async()=>{
 // addData();
 
 const getData = async()=>{
-    let res = await Post.findOne({}).populate("user");
+    let res = await Post.findOne({}).populate("user", "username");
     console.log(res);
 }
 
