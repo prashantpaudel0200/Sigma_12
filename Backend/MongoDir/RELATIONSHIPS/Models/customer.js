@@ -42,7 +42,7 @@ const Order = mongoose.model("Order", orderSchema);
 const Customer = mongoose.model("Customer", customerSchema);
 
 const  dele = async () => {
-let delet =  await Customer.findByIdAndDelete('6aee00bdff4485561e2a9182');
+let delet =  await Customer.findByIdAndDelete('6aee9c0938826270d2c7ee00');
     console.log(delet);
 }
 
